@@ -10,6 +10,12 @@
   "author": "Kajal Khunt (CWID : 10429885)",
   "license": "ISC",
   "dependencies": {
+    "body-parser": "^1.18.3",
+    "bootstrap": "^4.1.1",
     "express": "^4.16.3"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^4.0.1"
   }
 }

@@ -1,0 +1,34 @@
+@import "variables";
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+
+body,
+html {
+    background: $body-bgcolor;
+    color: darken($brand-primary, 20%);
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: $primary-font-size;
+    background-clip: border-box;
+}
+.card {
+    background-color: $card-bgcolor;
+}
+p {
+    font-size: $secondary-font-size;
+}
+a {
+    color: rgb(255, 255, 255);
+}
+.navigation {
+    width: 100%;
+    border-width: 1px;
+    border-style:solid;
+    border-color: rgba(47, 103, 110, 0.384);
+    background-color: $navigation-bgcolor;
+    @media(min-width: 768px) {
+        & {
+            float: left;
+            width: 4%;
+        }
+    }
+}
