@@ -1,0 +1,15 @@
+{
+  "name": "lab-2",
+  "version": "1.0.0",
+  "description": "Compiling SASS and Boootstrap",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Kajal Khunt (CWID : 10429885)",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}
