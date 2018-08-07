@@ -1,0 +1,19 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "Websocket and worker",
+  "main": "index.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Kajal Khunt (CWID : 10429885)",
+  "license": "ISC",
+  "dependencies": {
+    "bluebird": "^3.5.1",
+    "express": "^4.16.3",
+    "node-redis-pubsub": "^3.0.0",
+    "node-uuid": "^1.4.8",
+    "socket.io": "^2.1.1"
+  }
+}

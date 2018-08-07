@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" /> 
+    <title>Compiling SASS and Bootstrap </title> 
+    <link rel="stylesheet" type="text/css"  href="./css/styles.min.css" /> 
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-3" >
+                <h1 class="mb-4" >Items</h1>
+                <ul class="nav flex-column nav-pills" id="items">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#p1">Cinnamon Role</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#p2">Healthy Tikkis</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#p3">Fruit Curd</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#p4">Veggie Bites</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#p5">Spicy Meal</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#p6">Browny Dessert</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#p7">Grilled Veggies</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#p8">Pina Colada Pork Ribs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#p9">Strawberry Pudding</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#p10">Healthy Breakfast</a>
+                    </li>
+                </ul><br>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-9">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4" id="p1">
+                        <div class="card text-center mb-4">
+                        <img class="card-img-top" src="./img/image1.jpg" alt="Cinnamon Role image cap">
+                        <div class="card-body">
+                            <h2 class="card-title">Cinnamon Role</h2>
+                            <p class="card-text">Click on below button to find the receipe of this item.</p>
+                            <button type= "button" class="btn btn-primary" data-toggle="modal" data-target="#model1">Receipe...</button>
+                            <!-- Modal -->
+                            <div class="modal fade" id="model1" tabindex="-1" role="dialog" aria-labelledby="model1Label" aria-hidden="true">
+                                <div class="modal-dialog modal-lg" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h2 class="modal-title" id="model1Label">Receipe Ingredients and Method</h2>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>
+                                                    1.Preheat oven to 400 degrees F (200 degrees C)<br>
+                                                    2.Whisk flour, 2 tablespoons white sugar, baking powder, and salt together in a large bowl<br>
+                                                    3.Turn dough out onto a floured work surface and roll dough into a 1/4-inch thick rectangle<br>
+                                                    4.Whisk 1/2 cup white sugar, brown sugar, and cinnamon together in a small bowl.<br>
+                                                    5.Bake in the preheated oven until rolls are set, 20 to 25 minutes.<br>
+                                                    6.Beat confectioners' sugar, cream cheese, 1/4 cup softened butter, and vanilla extract together in a bowl until frosting is smooth. Top hot cinnamon rolls with cream cheese frosting.<br>
+                                            </p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>  
+                    </div>  
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4" id="p2">
+                    <div class="card text-center mb-4">
+                        <img class="card-img-top" src="./img/image2.jpg" alt="Healthy Tikkis image cap">
+                        <div class="card-body">
+                            <h2 class="card-title">Healthy Tikkis</h2>
+                            <p class="card-text">Click on below button to find the receipe of this item</p>
+                            <button type= "button" class="btn btn-primary" data-toggle="modal" data-target="#model2">Receipe...</button>
+                            <!-- Modal -->
+                            <div class="modal fade" id="model2" tabindex="-1" role="dialog" aria-labelledby="model2Label" aria-hidden="true">
+                                <div class="modal-dialog modal-lg" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h2 class="modal-title" id="model2Label">Receipe Ingredients and Method</h2>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>
+                                                    Ingredients <br>
+                                                    1.Cabbage shredded 1/4 small.<br>
+                                                    2.Cauliflower separated into florets 1/4 medium.<br>
+                                                    3.Green peas 1/2 cup.<br>
+                                                    4.Oil 3 tbsps + for deep-frying.<br>
+                                                    5.Ginger-garlic paste 1 teaspoon.<br>
+                                                    6.Pav bhaji masala 2 1/2 teaspoons.<br>
+                                                    7.Potatoes boiled and grated 2.<br>
+                                                    8.Carrot,grated 1 medium.<br><br>
+                                                    Method<br><br>
+                                                    Step 1<br>
+                                                    Pressure cook cabbage, cauliflower and peas with just enough water so as to cover them till one whistle. Open the lid when the pressure reduces completely and continue to cook till water dries up completely.
+                                                <br>Step 2<br>
+                                                    Mash them well. Heat three tablespoons oil in a non stick pan, add ginger-garlic paste and sauté for one minute. Stir in the pav bhaji masala, potatoes, carrot and mashed vegetables. Stir for five minutes.
+                                                <br>Step 3<br>
+                                                    Add salt, sugar, chaat masala and lemon juice. Mix well. Remove from heat and set aside to cool. Add the bread crumbs and mix well to make a dough. Divide into equal portions and roll into tikkis.
+                                                <br>Step 4<br>
+                                                    Mix semolina, refined flour, salt and pepper powder and spread in a plate. Roll the tikkis in this mixture, cover with clingfilm and refrigerate for two hours.
+                                                <br>Step 5<br>
+                                                    Heat sufficient oil in a kadai and deep fry the tikkis till crisp and golden. Drain on absorbent paper and serve hot. 
+                                            </p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>  
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4" id="p3">
+                    <div class="card text-center mb-4">
+                        <img class="card-img-top" src="./img/image3.jpg" alt="Fruit Curd image cap">
+                        <div class="card-body">
+                            <h2 class="card-title">Fruit Curd</h2>
+                            <p class="card-text">Click on below button to find the receipe of this item.</p>
+                            <button type= "button" class="btn btn-primary" data-toggle="modal" data-target="#model3">Receipe...</button>
+                            <!-- Modal -->
+                            <div class="modal fade" id="model3" tabindex="-1" role="dialog" aria-labelledby="model3Label" aria-hidden="true">
+                                <div class="modal-dialog modal-lg" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h2 class="modal-title" id="model3Label">Receipe Ingredients and Method</h2>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>
+                                                    Ingredients<br><br>
+
+                                                    7 large egg yolks<br>
+                                                    6-7 passion fruit<br>
+                                                    1 cup sugar<br>
+                                                    pinch salt<br>
+                                                    10 tablespoons cold unsalted butter cut into chunks.<br><br>
+                                                    
+                                                    Method<br><br>
+                                                    1.Slice each passion fruit in half and scoop the pulp into a blender. ...<br>
+                                                    2.In a small saucepan, combine the egg yolks, passion fruit juice and sugar. ...<br>
+                                                    3.Remove from heat. ...<br>
+                                                    4.Place a clean sieve or fine mesh strainer over a small bowl and pour the curd into the strainer.<br>
+                                            </p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                </div>  
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4" id="p4">
+                        <div class="card text-center mb-4">
+                        <img class="card-img-top" src="./img/image4.jpg" alt="Veggie Bites image cap">
+                        <div class="card-body">
+                            <h2 class="card-title">Veggie Bites</h2>
+                            <p class="card-text">Click on below button to find the receipe of this item.</p>
+                            <button type= "button" class="btn btn-primary" data-toggle="modal" data-target="#model4">Receipe...</button>
+                            <!-- Modal -->
+                            <div class="modal fade" id="model4" tabindex="-1" role="dialog" aria-labelledby="model4Label" aria-hidden="true">
+                                <div class="modal-dialog modal-lg" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h2 class="modal-title" id="model4Label">Receipe Ingredients and Method</h2>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>
+                                                    Ingredients<br><br>
+
+                                                    1 tube (4 ounces) refrigerated crescent rolls.<br>
+                                                    4 ounces cream cheese, softened.<br>
+                                                    1 tablespoon mayonnaise.<br>
+                                                    1-1/2 teaspoons ranch salad dressing mix.<br>
+                                                    1/2 cup finely chopped fresh broccoli.<br>
+                                                    1/2 cup finely chopped fresh cauliflower.<br>
+                                                    3 tablespoons chopped sweet red pepper.<br>
+                                                    3 tablespoons chopped green pepper.<br>
+
+                                                <br>Directions<br><br>
+
+                                                    Unroll crescent dough onto a baking sheet forming a 14x3-1/2-in. rectangle; seal perforations. Bake at 375° for 7-9 minutes or until golden brown. Cool completely on a wire rack.
+                                                <br>In a large bowl, beat the cream cheese, mayonnaise and salad dressing mix until blended. Spread evenly over crust. Sprinkle with vegetables; gently press down. Cover with plastic wrap. Chill until serving. Cut into squares
+                                            </p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>  
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4" id="p5">
+                    <div class="card text-center mb-4">
+                        <img class="card-img-top" src="./img/image5.jpg" alt="Spicy Meal image cap">
+                        <div class="card-body">
+                            <h2 class="card-title">Spicy Meal</h2>
+                            <p class="card-text">Click on below button to find the receipe of this item.</p>
+                            <button type= "button" class="btn btn-primary" data-toggle="modal" data-target="#model5">Receipe...</button>
+                            <!-- Modal -->
+                            <div class="modal fade" id="model5" tabindex="-1" role="dialog" aria-labelledby="model5Label" aria-hidden="true">
+                                <div class="modal-dialog modal-lg" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h2 class="modal-title" id="model5Label">Receipe Ingredients and Method</h2>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>
+                                                    Ingredients <br><br>
+                                                    Salt & freshly ground pepper, to taste<br>
+                                                    1½ tablespoons canola oil, divided<br>
+                                                    3 onions, chopped<br>
+                                                    1 green bell pepper, seeded and chopped<br>
+                                                    1 red bell pepper, seeded and chopped<br>
+                                                    6 cloves garlic, minced<br>
+                                                    2 jalapeno peppers, seeded and finely chopped<br>
+                                                    2 tablespoons ground cumin<br>
+                                                    2 tablespoons chili powder<br><br>
+
+                                                    Directions <br><br>
+                                                    Season beef with salt and pepper. Heat 1½ teaspoons oil in a Dutch oven over medium-high heat. <br>
+                                                    Add half the beef and cook, stirring occasionally, until browned on all sides, 2 to 5 minutes. 
+                                                    <br>Transfer to a plate lined with paper towels. Repeat with another 1½ teaspoons oil and remaining beef. 
+                                                    <br>Reduce heat to medium and add remaining 1½ teaspoons oil to the pot. <br>
+                                                    Add onions and bell peppers; cook, stirring frequently, until onions are golden brown, 10 to 20 minutes. <br>
+                                                    Add garlic, jalapenos, cumin, chili powder, paprika and oregano. Stir until aromatic, about 2 minutes. 
+                                            </p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>  
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4" id="p6">
+                    <div class="card text-center mb-4">
+                        <img class="card-img-top" src="./img/image6.jpg" alt="Browny Dessert image cap">
+                        <div class="card-body">
+                            <h2 class="card-title">Browny Dessert</h2>
+                            <p class="card-text">Click on below button to find the receipe of this item.</p>
+                            <button type= "button" class="btn btn-primary" data-toggle="modal" data-target="#model6">Receipe...</button>
+                            <!-- Modal -->
+                            <div class="modal fade" id="model6" tabindex="-1" role="dialog" aria-labelledby="model6Label" aria-hidden="true">
+                                <div class="modal-dialog modal-lg" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h2 class="modal-title" id="model6Label">Receipe Ingredients and Method</h2>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>
+                                                    Decadent Brownie Pudding Dessert<br><br>
+
+                                                    1 brownie mix (for a 9x13 pan)<br>
+                                                    Ingredients called for on brownie mix (oil, water, eggs)<br>
+                                                    1 (8 oz) package cream cheese, softened (light cream cheese works great)<br>
+                                                    1 cup powdered sugar.<br>
+                                                    2 (8 oz) containers Cool-Whip frozen whipped topping, thawed.<br>
+                                                    1 (3 oz) instant chocolate pudding.<br>
+                                                    1 (3 oz) instant vanilla pudding.<br>
+                                            </p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                </div>  
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4" id="p7">
+                        <div class="card text-center mb-4">
+                        <img class="card-img-top" src="./img/image7.jpg" alt="Grilled Veggies image cap">
+                        <div class="card-body">
+                            <h2 class="card-title">Grilled Veggies</h2>
+                            <p class="card-text">Click on below button to find the receipe of this item.</p>
+                            <button type= "button" class="btn btn-primary" data-toggle="modal" data-target="#model7">Receipe...</button>
+                            <!-- Modal -->
+                            <div class="modal fade" id="model7" tabindex="-1" role="dialog" aria-labelledby="model7Label" aria-hidden="true">
+                                <div class="modal-dialog modal-lg" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h2 class="modal-title" id="model7Label">Receipe Ingredients and Method</h2>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>
+                                                
+                                                Ingredients<br><br>
+
+                                                3 red bell peppers, seeded and halved<br>
+                                                3 yellow squash (about 1 pound total), sliced lengthwise into 1/2-inch-thick rectangles<br>
+                                                3 zucchini (about 12 ounces total), sliced lengthwise into 1/2-inch-thick rectangles<br>
+                                                3 Japanese eggplant (12 ounces total), sliced lengthwise into 1/2-inch-thick rectangles<br>
+                                                12 cremini mushrooms<br>
+                                                1 bunch (1-pound) asparagus, trimmed<br>
+                                                12 green onions, roots cut off<br>
+                                                1/4 cup plus 2 tablespoons olive oil<br>
+
+                                            </p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>  
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4" id="p8">
+                    <div class="card text-center mb-4">
+                        <img class="card-img-top" src="./img/image8.jpg" alt="Pina Colada Pork Ribs image cap">
+                        <div class="card-body">
+                            <h2 class="card-title">Pina Colada Pork Ribs</h2>
+                            <p class="card-text">Click on below button to find the receipe of this item.</p>
+                            <button type= "button" class="btn btn-primary" data-toggle="modal" data-target="#model8">Receipe...</button>
+                            <!-- Modal -->
+                            <div class="modal fade" id="model8" tabindex="-1" role="dialog" aria-labelledby="model8Label" aria-hidden="true">
+                                <div class="modal-dialog modal-lg" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h2 class="modal-title" id="model8Label">Receipe Ingredients and Method</h2>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>
+                                                    Ingredients<br><br>
+
+                                                    6 pork rib pieces<br>
+                                                    2 cups pineapple juice<br>
+                                                    1 cup rum<br>
+                                                    2 Tbsp oil<br>
+                                                    1 Tbsp ginger paste<br>
+                                                    1 Tbsp mint paste + fresh leaves<br>
+                                                    1/4 cup grated jaggery<br>
+                                                    1 Tbsp chilli flakes<br>
+                                                    Salt to taste<br>
+                                            </p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>  
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4" id="p9">
+                    <div class="card text-center mb-4">
+                        <img class="card-img-top" src="./img/image9.jpg" alt="Strawberry Pudding image cap">
+                        <div class="card-body">
+                            <h2 class="card-title">Strawberry Pudding</h2>
+                            <p class="card-text">Click on below button to find the receipe of this item.</p>
+                            <button type= "button" class="btn btn-primary" data-toggle="modal" data-target="#model9">Receipe...</button>
+                            <!-- Modal -->
+                            <div class="modal fade" id="model9" tabindex="-1" role="dialog" aria-labelledby="model9Label" aria-hidden="true">
+                                <div class="modal-dialog modal-lg" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h2 class="modal-title" id="model9Label">Receipe Ingredients and Method</h2>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>
+                                                    Ingredients<br><br>
+
+                                                    To prepare strawberry sauce:<br>
+                                                    Chop strawberries and add them to a small sauce pot, heating over medium heat.<br>
+                                                    Add sugar, vanilla and lemon juice. ...<br>
+                                                    Cover and cook for about 15 minutes, stirring often.<br>
+                                                    Use your immersion blender to puree strawberry mixture. ...<br>
+                                                    Set aside. ...<br>
+                                                    To prepare pudding:<br>
+                                            </p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                </div> 
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4" id="p10">
+                    <div class="card text-center mb-4">
+                        <img class="card-img-top" src="./img/image10.jpg" alt="Healthy Breakfast image cap">
+                        <div class="card-body">
+                            <h2 class="card-title">Healthy Breakfast</h2>
+                            <p class="card-text">Click on below button to find the receipe of this item.</p>
+                            <button type= "button" class="btn btn-primary" data-toggle="modal" data-target="#model10">Receipe...</button>
+                            <!-- Modal -->
+                            <div class="modal fade" id="model10" tabindex="-1" role="dialog" aria-labelledby="model10Label" aria-hidden="true">
+                                <div class="modal-dialog modal-lg" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h2 class="modal-title" id="model10Label">Receipe Ingredients and Method</h2>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>
+                                                    Ingredients<br><br>
+
+                                                Nut Butter, Banana, and Chia Seed Toast. Photo: The Skinny Fork.<br>
+                                                Berry and Yogurt Smoothie. Photo: Chef Savvy.<br>
+                                                Savory Oatmeal With an Egg. <br>
+                                                Quinoa Fruit Salad.<br>
+                                                Tomato Toast With Macadamia Ricotta. <br>
+                                                Quinoa and Chia Porridge. <br>
+                                                Avocado Toast With Egg. <br>
+                                                Chocolate Quinoa Breakfast Bowl.<br>
+                                            </p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                </div> 
+            </div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/vendor.min.js"></script>
+    <script src="/js/tota11y.min.js"></script>
+</body>
+</html>

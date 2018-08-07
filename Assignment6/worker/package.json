@@ -1,0 +1,16 @@
+{
+  "name": "assignment6",
+  "version": "1.0.0",
+  "description": "web sockets and worker",
+  "main": "index.js",
+  "scripts": {
+    "start": "node worker.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Kajal Khunt (CWID:10429885)",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "node-redis-pubsub": "^3.0.0"
+  }
+}

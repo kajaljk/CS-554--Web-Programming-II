@@ -1,0 +1,18 @@
+{
+  "name": "assignment4",
+  "version": "1.0.0",
+  "description": "cs-554 Assignment 4",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Kajal Khunt (CWID:10429885)",
+  "license": "ISC",
+  "dependencies": {
+    "bluebird": "^3.5.1",
+    "express": "^4.16.3",
+    "jsonfile": "^4.0.0",
+    "redis": "^2.8.0"
+  }
+}

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Pixabay Search</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">   
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" 
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">  
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"  crossorigin="anonymous"></script>
+    <script src="/socket.io/socket.io.js"></script> 
+</head>
+<body>
+    <div class="container">
+        <h1>Pixabay Image Search</h1>
+        <div class="bd-example">
+            <form id="searchImage">
+                <div class="form-group row">
+                    <label for="username" class="col-sm-1 col-form-label">Name</label>
+                    <div class="col-sm-4">
+                        <input type="text" class="form-control" id="username" placeholder="Enter name">
+                    </div>
+                    <label for="imageQuery" class="col-sm-1 col-form-label">Search</label>
+                    <div class="col-sm-4">
+                        <input type="text" class="form-control" id="imageQuery" placeholder="Search Image">
+                    </div>  
+                </div>
+                <div class="form-group row">
+                    <label for="message" class="col-sm-1 col-form-label">Message</label>
+                    <div class="col-sm-4">
+                        <textarea class="form-control" id="message" rows="3"></textarea>
+                    </div>  
+                </div>
+                <button type="submit" class="btn btn-primary" style="background-color: #0072ee; margin-bottom: 10px;">Search</button>
+            </form>
+        </div>
+        <div id="successMsg" class="alert alert-success col-sm-12">
+            <center> Search Info submitted !</center>
+        </div>
+        <div id="errorMsg" class="alert alert-danger col-sm-12 ">
+            <center> Enter username first !</center>
+        </div>
+        <div class="col-md-12">
+            <div class="col-md-12" id="imageFeed">
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        const socket = io('/pixabayImageFeed');
+
+        const userForm = $("form");
+        const userName = $("#username");
+        const imgMessage = $("#message");
+        const imgSearch = $("#imageQuery");
+        const imageFeedDiv = $('#imageFeed');
+        const successMsg = $("#successMsg");
+        const errorMsg = $("#errorMsg");
+
+        successMsg.hide();
+        errorMsg.hide();
+
+        socket.on('imageFeed', (newPost) => { 
+            let resultHTML = "";
+            let images = newPost.result;
+            if (images.length) {
+                for (let i = 0; i < images.length; i++) {
+                    resultHTML = resultHTML + "<div class='col-md-3' style='padding: 15px;'><div class='card'>"+
+                                "<img class='card-img-top thumbnail' src=" + images[i] + "  alt='img-thumbnail' height='230px' width='250px'></div></div>";
+                }
+            } else {
+                resultHTML = "<b>No Match Found</b>";
+            } 
+            imageFeedDiv.prepend(
+                "<hr class='divider'>" +
+                "<div class='col-md-12'>" + 
+                "<div class='card-block'>"+
+                "<h2 class='card-title'>"+ newPost.username + "</h2>"+
+                "<p class='card-text'>"+ newPost.message + "</p></div>"+
+                "<div class='row'>" + resultHTML + "</div>" +
+                "</div>");
+        });
+
+        userForm.submit(function () {
+            let userData = {
+                username: userName.val(),
+                query: imgSearch.val(),
+                message: imgMessage.val()
+            };
+            if (userName.val() == "") {
+                errorMsg.show();
+                successMsg.hide();
+            }
+            else {
+                userName.prop('disabled',true);
+                imgMessage.val('');
+                imgSearch.val('');
+                successMsg.show();
+                errorMsg.hide();
+
+                socket.emit('postImage',userData);
+            } 
+            return false;
+        });
+    </script> 
+</body>
+</html>
