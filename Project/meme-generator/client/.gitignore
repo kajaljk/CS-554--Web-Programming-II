@@ -1,5 +1,9 @@
 # See https://help.github.com/ignore-files/ for more about ignoring files.
 
+package-lock.json
+node_modules/  
+/src/config.js 
+
 # dependencies
 /node_modules
 
